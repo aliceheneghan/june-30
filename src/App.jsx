@@ -12,7 +12,22 @@ const footerItems = ["Footer item one", "Footer item two", "Footer item three"];
 
 
 function App() {
-  return     
+  return (
+    <>
+      <header>
+        <h3>{headerText}</h3>
+        <ul>
+
+        </ul>
+      </header>
+      <footer>
+        <h3>{footerText}</h3>
+        <ul>
+
+        </ul>
+      </footer>
+    </>
+  )     
 }
 
 export default App;
