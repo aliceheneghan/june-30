@@ -1,4 +1,8 @@
-// Styles
+// Components
+import Header from './components/header/index.jsx';
+import Footer from './components/footer/index.jsx';
+
+//Styles
 import './App.css';
 
 // Data
@@ -8,24 +12,11 @@ const headerItems =["Header item one", "Header item two", "Header item three"];
 const footerText = "I am the footer";
 const footerItems = ["Footer item one", "Footer item two", "Footer item three"];
 
-
-
-
 function App() {
   return (
     <>
-      <header>
-        <h3>{headerText}</h3>
-        <ul>
-
-        </ul>
-      </header>
-      <footer>
-        <h3>{footerText}</h3>
-        <ul>
-
-        </ul>
-      </footer>
+      <Header text={headerText} listArray={headerItems}/>
+      <Footer text={footerText} listArray={footerItems}/>
     </>
   )     
 }
