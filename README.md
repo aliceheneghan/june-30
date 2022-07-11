@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# June 30th project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Today's task:
+1. use create-react-app to create a new project.
+2. inside App.jsx there will be JSX already written, delete it.
+3. inside the src directory, create a new directory called components
+4. inside the components directory, we want to create 4 new components
+    1. Header
+    2. Footer
+    3. List
+    4. ListItem
 
-## Available Scripts
+https://create-react-app.dev/docs/getting-started/
+create-react-app.devcreate-react-app.dev
+Getting Started | Create React App
+Create React App is an officially supported way to create single-page React (9 kB)
+https://create-react-app.dev/docs/getting-started/
 
-In the project directory, you can run:
+Inside App.jsx, you will import and render only the Header and the Footer component.
+The header component will accept two props:
+1. text
+2. listItems
+The footer component will accept two props :
+1. text
+2. listItems
+In both cases, the text prop will be a string, and listItems will be an array of strings.
+1:57
+Screenshot from 2022-06-30 13-12-31.png 
+Screenshot from 2022-06-30 13-12-31.png
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2:00
+props for the header:
+1. const headerText=”I am the header”
+2. const headerItems =[‘Header item one’, ‘Header item two’, ‘Header item three’]
+props for the footer:
+1. const footerText=”I am the footer”
+2. const footerItems = [‘Footer item one’, ‘ Footer item two’, ‘ Footer item three’]
+2:02
+1. Inside the header and footer component, render the text that was passed to it
+2. inside the header and footer component, import and render the List component and pass the listItems prop to it
+3. Inside the List component, use the listItems that was passed as a prop, and render a ListItem for every item in the array that was passed as a prop
+4. the ListItem component should accept a text prop, and render the text it was passed to it
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+Andrej Tacigin
+  2:07 PM
+const headerText = "I am the header";
+const headerItems = ["Header item one", "Header item two", "Header item three"];
+const footerText = "I am the footer";
+const footerItems = ["Footer item one", "Footer item two", "Footer item three"];
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Andrej Tacigin
+  2:18 PM
+Screenshot from 2022-06-30 14-18-01.png 
+Screenshot from 2022-06-30 14-18-01.png
