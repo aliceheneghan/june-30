@@ -1,5 +1,5 @@
 // Components
-import ListItem from "../list-item";
+import ListItem from "../ListItem";
 
 const List = (props) => {
   return (

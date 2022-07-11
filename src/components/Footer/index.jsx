@@ -1,13 +1,13 @@
 // Components
-import List from "../list";
+import List from "../List";
 
-const Header = (props) => {
+const Footer = (props) => {
   return (
-    <header>
+    <footer>
       <h3>{props.text}</h3>
       <List listArray={props.listArray} />
-    </header>
+    </footer>
   );
 };
 
-export default Header;
+export default Footer;
